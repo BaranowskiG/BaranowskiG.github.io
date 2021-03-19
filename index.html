@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Baranowski - Portfolio</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="code.js"></script>
+</head>
+<body id="body">
+    <div class="view glassmorphism" id="view">
+
+        <!-- view left side - static -->
+        <div class="left-side">
+            <div class="me animated glassmorphism">
+                <img src="assets/user.png">
+            </div>
+            <div class="nav animated glassmorphism">
+                <ul>
+                    <li onclick="showTab(0)" id="about-btn" class="animated">
+                        <span class="material-icons md-18">home</span> About
+                    </li>
+
+                    <li onclick="showTab(1)" id="iOS-btn" class="animated">
+                        <span class="material-icons md-18">phone_iphone</span> iOS
+                    </li>
+
+                    <li onclick="showTab(2)" id="website-btn" class="animated">
+                        <span class="material-icons md-18">public</span> Website
+                    </li>
+
+                    <li onclick="showTab(3)" id="resume-btn" class="animated">
+                        <span class="material-icons md-18">description</span> Resume
+                    </li>
+
+                    <li onclick="showTab(4)" id="contact-btn" class="animated">
+                        <span class="material-icons md-18">alternate_email</span> Contact
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- view right side - dynamic -->
+        <div class="content">
+
+            <!-- about site -->
+            <div id="about">
+                <div class="about-left">
+                    <div class="about-iam animated glassmorphism">
+                        <h1>Me?  </h1>
+                        <ul>
+                            <li>Student</li>
+                            <li>Minimalist</li>
+                            <li>iOS Developer</li>
+                        </ul>
+                    </div>
+                    <div class="about-interests animated glassmorphism">
+                        <h1>Interests</h1>
+                        <ul>
+                            <li>UI/UX</li>
+                            <li>Finaces</li>
+                            <li>Basketball</li>
+                            <li>Zero waste</li>
+                            <li>self-improvement</li>
+                        </ul>
+                    </div>
+                </div>
+
+               <div class="about-right">
+                   <div class="about-image" id="about-image">
+                    <img src="assets/workspace.svg">
+                    <h3 onclick="showDescription()" class="glassmorphism animated">More!</h3>
+                   </div> 
+                    <div class="about-description animated glassmorphism" id="about-description"  style="display: none;">
+                        <h1>My past</h1>
+                        <p>When I was 15 I got to know Javascript and realised that I was going to code a lot.</p>
+                        <p>Since then I have learned the basics of:</p> 
+                        <ul>
+                            <li>Back end (PHP)</li>
+                            <li>API (python, flask)</li>
+                            <li>iOS development (Swift)</li>
+                            <li>Front end (JS, jQuery, Bootstrap)</li>
+                            <li>Database management (SQL, noSQL)</li>
+                        </ul>
+                        <p>Also: </p>
+                        <ul>
+                            <li>Soft skills</li>
+                            <li>Agile, mostly Scrum</li>
+                            <li>Algorithms and data structures</li>
+                        </ul>
+                        <br>
+                        <p>but...I had a bad habit. Every time I finished a new project, I deleted the old one because I found it terrible.</p>
+                        <p>Anyway. I hope you enjoy my portfolio. </p>
+                    </div>
+               </div>
+            </div>
+
+            <!-- iOS site -->
+            <div id="iOS">
+                <div class="ios-app animated glassmorphism">
+                    <h2>Counter</h2>
+                    <p>SwiftUI</p>
+                    <p>MVVM</p>
+                    <p>Realm</p>
+                    <img src="assets/ios1.png">
+                </div>
+                <div class="ios-app animated glassmorphism">
+                    <h2>Task Manager</h2>
+                    <p>SwiftUI</p>
+                    <p>MVVM</p>
+                    <p>Firebase</p>
+                    <img src="assets/ios3.png">
+                </div>
+                <div class="ios-app animated glassmorphism">
+                    <h2>Cantor</h2>
+                    <p>UIKit</p>
+                    <p>MVVM-C</p>
+                    <p>Coordinators</p>
+                    <img src="assets/ios2.png">
+                </div>
+            </div>
+
+            <!-- web site -->
+            <div id="website">
+                <a href="http://www.joannadylewicz.pl" target="_blank">
+                    <div class="website-item animated glassmorphism">
+                        <img src="assets/web1.png">
+                        <p>Makeup Portfolio</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- resume site -->
+            <div id="resume">
+                <a href="assets/resume_en.pdf" target="_blank">
+                    <div class="resume-box animated glassmorphism">
+                        <span class="material-icons md-72">article</span>
+                        <br>
+                        <br>
+                        <h3>English</h3>
+                    </div>
+                </a>
+                <a href="assets/resume_pl.pdf" target="_blank">
+                    <div class="resume-box animated glassmorphism">
+                        <span class="material-icons md-72">article</span>
+                        <br>
+                        <br>
+                        <h3>Polish</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- contact site -->
+            <div id="contact">
+                <a href="https://github.com" target="_blank"><img src="assets/github.svg" class="animated glassmorphism"></a>
+                <a href="https://www.facebook.com/Ferrarto" target="_blank"><img src="assets/facebook.svg" class="animated glassmorphism"></a>
+                <a href="https://www.linkedin.com/in/grzegorz-baranowski-1b9190209/" target="_blank"><img src="assets/linkedin.svg" class="animated glassmorphism"></a>
+
+                <div class="email-form animated glassmorphism">
+                    <input type="text" placeholder="What is your email?" class="email-sender animated glassmorphism">
+                    <br>
+                    <textarea placeholder="Type message here" class="email-content"></textarea>
+                    <input type="submit" value="Send" class="email-submit animated glassmorphism">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- screen size error view -->
+    <div class="screen-size-error glassmorphism">
+        <p>This website does not support mobile screens yet.</p>
+    </div>
+
+<!-- display about site first -->
+<script> showTab(0)</script>
+
+</body>
+</html>
