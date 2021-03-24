@@ -20,7 +20,12 @@ function showTab(id) {
 }
 
 function showDescription() {
+    document.getElementById("view").style.display = "none";
+    document.getElementById("more").style.display = "block";
+}
+
+function hideDescription() {
     console.log("work")
-    document.getElementById("about-image").style.display = "none";
-    document.getElementById("about-description").style.display = "block";
+    document.getElementById("view").style.display = "block";
+    document.getElementById("more").style.display = "none";
 }

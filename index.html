@@ -21,7 +21,7 @@
 
         <!-- view left side - static -->
         <div class="left-side">
-            <div class="me animated glassmorphism">
+            <div class="me animated glassmorphism not-available">
                 <img src="assets/userImage.png">
             </div>
             <div class="nav animated glassmorphism">
@@ -55,7 +55,7 @@
             <!-- about site -->
             <div id="about">
                 <div class="about-left">
-                    <div class="about-iam animated glassmorphism">
+                    <div class="about-iam animated glassmorphism not-available">
                         <h1>Me?  </h1>
                         <ul>
                             <li>Student</li>
@@ -63,7 +63,7 @@
                             <li>iOS Developer</li>
                         </ul>
                     </div>
-                    <div class="about-interests animated glassmorphism">
+                    <div class="about-interests animated glassmorphism not-available">
                         <h1>Interests</h1>
                         <ul>
                             <li>UI/UX</li>
@@ -80,47 +80,27 @@
                     <img src="assets/workspace.svg">
                     <h3 onclick="showDescription()" class="glassmorphism animated">More!</h3>
                    </div> 
-                    <div class="about-description animated glassmorphism" id="about-description"  style="display: none;">
-                        <h1>My past</h1>
-                        <p>When I was 15 I got to know Javascript and realised that I was going to code a lot.</p>
-                        <p>Since then I have learned the basics of:</p> 
-                        <ul>
-                            <li>Back end (PHP)</li>
-                            <li>API (python, flask)</li>
-                            <li>iOS development (Swift)</li>
-                            <li>Front end (JS, jQuery, Bootstrap)</li>
-                            <li>Database management (SQL, noSQL)</li>
-                        </ul>
-                        <p>Also: </p>
-                        <ul>
-                            <li>Soft skills</li>
-                            <li>Agile, mostly Scrum</li>
-                            <li>Algorithms and data structures</li>
-                        </ul>
-                        <br>
-                        <p>but...I had a bad habit. Every time I finished a new project, I deleted the old one because I found it terrible.</p>
-                        <p>Anyway. I hope you enjoy my portfolio. </p>
-                    </div>
+                    
                </div>
             </div>
 
             <!-- iOS site -->
             <div id="iOS">
-                <div class="ios-app animated glassmorphism">
+                <div class="ios-app animated glassmorphism not-available">
                     <h2>Counter</h2>
                     <p>SwiftUI</p>
                     <p>MVVM</p>
                     <p>Realm</p>
                     <img src="assets/ios1.png">
                 </div>
-                <div class="ios-app animated glassmorphism">
+                <div class="ios-app animated glassmorphism not-available">
                     <h2>Task Manager</h2>
                     <p>SwiftUI</p>
                     <p>MVVM</p>
                     <p>Firebase</p>
                     <img src="assets/ios3.png">
                 </div>
-                <div class="ios-app animated glassmorphism">
+                <div class="ios-app animated glassmorphism not-available">
                     <h2>Cantor</h2>
                     <p>UIKit</p>
                     <p>MVVM-C</p>
@@ -164,17 +144,40 @@
                 <a href="https://github.com" target="_blank"><img src="assets/github.svg" class="animated glassmorphism"></a>
                 <a href="https://www.facebook.com/Ferrarto" target="_blank"><img src="assets/facebook.svg" class="animated glassmorphism"></a>
                 <a href="https://www.linkedin.com/in/grzegorz-baranowski-1b9190209/" target="_blank"><img src="assets/linkedin.svg" class="animated glassmorphism"></a>
-
-                <div class="email-form animated glassmorphism">
-                    <input type="text" placeholder="What is your email?" class="email-sender animated glassmorphism">
-                    <br>
-                    <textarea placeholder="Type message here" class="email-content"></textarea>
-                    <input type="submit" value="Send" class="email-submit animated glassmorphism">
-                </div>
+                <a href="mailto:workbaranowski@gmail.com" target="_blank"><img src="assets/gmail.svg" class="animated glassmorphism"></a>
             </div>
 
         </div>
     </div>
+
+    <!-- more view -->
+    <div class="more" id="more" style="display: none;">
+        <div class="home-button-view ">
+            <span onclick="hideDescription()" class=" home-button animated glassmorphism material-icons md-72">home</span>
+        </div>
+        <div class="more-description animated glassmorphism not-available">
+            <h1>My past</h1>
+            <p>When I was 15 I got to know Javascript and realised that I was going to code a lot.</p>
+            <p>Since then I have learned the basics of:</p> 
+            <ul>
+                <li>Back end (PHP)</li>
+                <li>API (python, flask)</li>
+                <li>iOS development (Swift)</li>
+                <li>Front end (JS, jQuery, Bootstrap)</li>
+                <li>Database management (SQL, noSQL)</li>
+            </ul>
+            <p>Also: </p>
+            <ul>
+                <li>Soft skills</li>
+                <li>Agile, mostly Scrum</li>
+                <li>Algorithms and data structures</li>
+            </ul>
+            <br>
+            <p>but...I had a bad habit. Every time I finished a new project, I deleted the old one because I found it terrible.</p>
+            <p>Anyway. I hope you enjoy my portfolio. </p>
+        </div>
+    </div>
+
 
     <!-- screen size error view -->
     <div class="screen-size-error glassmorphism">
