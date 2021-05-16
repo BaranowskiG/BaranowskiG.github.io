@@ -1,0 +1,132 @@
+body {
+    background-color: #fbfbfb;
+}
+.preview {
+    padding-top: 50px;
+    background-image: linear-gradient(to top, #ececec, white)
+}
+.preview_group {
+    margin: 30px auto 0px auto;
+    width: 50%;
+}
+.preview_img {
+    float: left;
+    width: 50%;
+}
+
+/* tech */
+.tech {
+    background-color: #141414;
+    padding: 50px 0px;
+    margin: 15px 0px 0px 0px;
+}
+.tech .headline {
+    color: #fbfbfb;
+}
+.tech .headline {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.tech .subhead {
+    font-size: 21px;
+    color: #fbfbfb;
+}
+.tech-list {
+    max-width: 680px;
+    margin: auto;
+}
+.tech-item {
+    float: left;
+    width: 25%;
+}
+.tech-item img {
+    display: block;
+    width: 40px;
+    margin: 10px auto;
+}
+
+ /* equel height and cursor */
+.section_half_group {
+    display: flex;
+}
+.app_store, .github {
+    flex: 1;
+}
+.github, .github *, .app_store, .app_store * {
+    cursor: pointer;
+}
+
+/* github */
+.github {
+    background-color: rgb(3, 11, 32);
+    padding-top: 50px;
+}
+.section_half .headline, .section_half .subhead {
+    color: #fbfbfb;
+    margin: 0;
+}
+.github .subhead {
+    font-size: 21px;
+}
+.github .video_github{
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+/* app_store */
+.app_store {
+    background-image: linear-gradient(to bottom, rgb(31, 111, 241), rgb(23, 191, 251) );
+    padding-top: 50px;
+    cursor: pointer;
+}
+.sevir_logo {
+    width: 100px;
+    border-radius: 15px;
+    border: 2px solid white;
+    display: block;
+    margin: 32px auto;
+}
+.app_store_btn {
+    width: 180px;
+    margin:  52px auto;
+    display: block;
+}
+.app_store_content , .app_first_content{
+    margin-top: 12%;
+}
+
+/* app first */
+.app_first {
+    background-image: linear-gradient(to top, rgb(39, 2, 73), black);
+    padding-top: 50px;
+}
+.star_img {
+    display: block;
+    margin: auto;
+    width: 190px;
+}
+
+/* footer */
+.footer .link {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 700px) {
+    .preview_group {
+        width: 90%;
+    }
+    .tech-list {
+        padding: 10px 60px;
+    }
+    .tech .headline {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .tech .subhead {
+        font-size: 17px;
+    }
+    .section_half_group {
+        display: block;
+    }
+}
