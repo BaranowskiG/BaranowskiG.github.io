@@ -141,12 +141,13 @@ p, h1, h2, h3, h4, h5, h6, a {
     }
     .user_images {
         display: block;
-        margin: auto;
-        width: 520px;
+        margin: 20px auto;
+        width: 80%;
     }
     .image_user {
         display: inline-block;
-        width: 150px;
+        width: 32%;
+        margin:0px;
     }
     .section_half {
       width: calc(100% - 12px);
@@ -154,4 +155,7 @@ p, h1, h2, h3, h4, h5, h6, a {
     .footer_content, .footer_content .link {
         font-size: 10px!important;
     }
-  }
+    .link {
+        font-weight: 400;
+    }
+}

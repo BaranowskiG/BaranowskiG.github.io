@@ -117,7 +117,7 @@ body {
         width: 90%;
     }
     .tech-list {
-        padding: 10px 60px;
+        padding: 10px 5%;
     }
     .tech .headline {
         font-size: 32px;
@@ -125,6 +125,7 @@ body {
     }
     .tech .subhead {
         font-size: 17px;
+        padding-top: 2px;
     }
     .section_half_group {
         display: block;
